@@ -23,7 +23,8 @@ dependencies {
 	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
 	implementation 'com.auth0:auth0:1.1.0'
 	implementation 'com.auth0:auth0-spring-security-api:1.0.0-rc.2'
-	runtimeOnly 'org.hsqldb:hsqldb'
+//	runtimeOnly 'org.hsqldb:hsqldb'
+	runtimeOnly 'mysql:mysql-connector-java'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
