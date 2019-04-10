@@ -81,3 +81,9 @@ body:
 
 id = id of the product
 
+---
+
+## Delete One Product
+@DeleteMapping = `localhost:8080/api/products/{id}`
+
+id = id of the product
