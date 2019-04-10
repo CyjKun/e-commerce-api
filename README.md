@@ -4,7 +4,9 @@
 @PostMapping = `https://dev-cj.auth0.com/dbconnections/signup`
 
 headers:
+
 `key` = `Content-type`
+
 `value` = `application/json`
 
 body:
@@ -23,7 +25,9 @@ body:
 @PostMapping = `https://dev-cj.auth0.com/oauth/token`
 
 headers:
+
 `key` = `Content-type`
+
 `value` = `application/json`
 
 body:
@@ -52,7 +56,9 @@ note: should be able to return this JSON. where access_token can be used to use 
 @PostMapping = `localhost:8080/api/products`
 
 headers:
+
 `key` = `Content-type`
+
 `value` = `application/json`
 
 body:
