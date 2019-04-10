@@ -5,9 +5,9 @@
 
 headers:
 
-`key` = `Content-type`
+key = `Content-type`
 
-`value` = `application/json`
+value = `application/json`
 
 body:
 ```
@@ -26,9 +26,9 @@ body:
 
 headers:
 
-`key` = `Content-type`
+key = `Content-type`
 
-`value` = `application/json`
+value = `application/json`
 
 body:
 ```
@@ -57,9 +57,9 @@ note: should be able to return this JSON. where access_token can be used to use 
 
 headers:
 
-`key` = `Content-type`
+key = `Content-type`
 
-`value` = `application/json`
+value = `application/json`
 
 body:
 ```
@@ -77,7 +77,7 @@ body:
 ---
 
 ## Get One Product
-@GetMapping = localhost:8080/api/products/{id}
+@GetMapping = `localhost:8080/api/products/{id}`
 
 id = id of the product
 
