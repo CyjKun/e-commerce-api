@@ -7,9 +7,8 @@ import javax.transaction.Transactional
 
 @Service
 @Transactional
-class CreateProductData(val productRepository: ProductRepository) {
-
-    fun create(product: Product): Product{
-        return productRepository.save(product)
+class GetAllProductData(val productRepository: ProductRepository) {
+    fun getAll() : List<Product>{
+        return productRepository.findAll()
     }
 }

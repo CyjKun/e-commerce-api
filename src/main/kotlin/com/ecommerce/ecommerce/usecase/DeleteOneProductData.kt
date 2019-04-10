@@ -7,9 +7,8 @@ import javax.transaction.Transactional
 
 @Service
 @Transactional
-class CreateProductData(val productRepository: ProductRepository) {
-
-    fun create(product: Product): Product{
-        return productRepository.save(product)
+class DeleteOneProductData(val productRepository: ProductRepository) {
+    fun deleteOne(id: Long): Product {
+        return productRepository.deleteById(id)
     }
 }
