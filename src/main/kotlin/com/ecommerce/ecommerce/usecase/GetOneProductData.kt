@@ -8,7 +8,7 @@ import javax.transaction.Transactional
 @Service
 @Transactional
 class GetOneProductData(val productRepository: ProductRepository) {
-    fun getOne(id: Long): Product{
+    fun getOne(id: Long): Product {
         return productRepository.findById(id)
     }
 

@@ -7,5 +7,5 @@ interface ProductRepository {
 
     fun findById(id: Long): Product
 
-    fun deleteById(id: Long): Product
+    fun deleteById(id: Long)
 }

@@ -13,28 +13,27 @@ class ProductController(val createProductData: CreateProductData,
                         val getAllProductData: GetAllProductData,
                         val getOneProductData: GetOneProductData,
                         val deleteOneProductData: DeleteOneProductData
-                        ){
+) {
     //CREATE
     @PostMapping
-    fun saveProduct(@RequestBody product: Product): Product{
+    fun saveProduct(@RequestBody product: Product): Product {
         return createProductData.create(product)
     }
 
     //READ
     @GetMapping
-    fun getAllProduct(): List<Product>{
+    fun getAllProduct(): List<Product> {
         return getAllProductData.getAll()
     }
 
     @GetMapping("/{id}")
-    fun getOneProduct(@PathVariable id: Long):Product{
+    fun getOneProduct(@PathVariable id: Long): Product {
         return getOneProductData.getOne(id)
     }
 
     //DELETE
     @DeleteMapping("/{id}")
-    fun deleteOneProduct(@PathVariable id: Long):Product{
+    fun deleteOneProduct(@PathVariable id: Long) {
         return deleteOneProductData.deleteOne(id)
     }
-
 }
