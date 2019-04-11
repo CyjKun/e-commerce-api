@@ -1,7 +1,5 @@
 package com.ecommerce.ecommerce.domain
 
-import org.springframework.http.ResponseEntity
-
 interface ProductRepository {
     fun save(product: Product): Product
 

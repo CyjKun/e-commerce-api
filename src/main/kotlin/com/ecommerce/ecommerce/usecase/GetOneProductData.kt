@@ -2,7 +2,6 @@ package com.ecommerce.ecommerce.usecase
 
 import com.ecommerce.ecommerce.domain.Product
 import com.ecommerce.ecommerce.domain.ProductRepository
-import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
 import javax.transaction.Transactional
 

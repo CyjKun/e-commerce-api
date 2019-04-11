@@ -1,8 +1,10 @@
 package com.ecommerce.ecommerce.infrastracture.controllers
 
 import com.ecommerce.ecommerce.domain.Product
-import com.ecommerce.ecommerce.usecase.*
-import org.springframework.http.ResponseEntity
+import com.ecommerce.ecommerce.usecase.CreateProductData
+import com.ecommerce.ecommerce.usecase.DeleteOneProductData
+import com.ecommerce.ecommerce.usecase.GetAllProductData
+import com.ecommerce.ecommerce.usecase.GetOneProductData
 import org.springframework.web.bind.annotation.*
 
 @RestController
@@ -25,7 +27,7 @@ class ProductController(val createProductData: CreateProductData,
     }
 
     @GetMapping("/{id}")
-    fun getOneProduct(@PathVariable id: Long): Product{
+    fun getOneProduct(@PathVariable id: Long): Product {
         return getOneProductData.getOne(id)
     }
 
