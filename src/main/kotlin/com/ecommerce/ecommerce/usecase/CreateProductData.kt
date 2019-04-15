@@ -8,8 +8,7 @@ import javax.transaction.Transactional
 @Service
 @Transactional
 class CreateProductData(val productRepository: ProductRepository) {
-
-    fun create(product: Product): Product{
+    fun create(product: Product): Product {
         return productRepository.save(product)
     }
 }

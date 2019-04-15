@@ -8,7 +8,7 @@ import javax.transaction.Transactional
 @Service
 @Transactional
 class GetAllProductData(val productRepository: ProductRepository) {
-    fun getAll() : List<Product>{
+    fun getAll(): List<Product> {
         return productRepository.findAll()
     }
 }

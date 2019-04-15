@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 open class EcommerceApplication
 
 fun main(args: Array<String>) {
-	runApplication<EcommerceApplication>(*args)
+    runApplication<EcommerceApplication>(*args)
 }
