@@ -1,6 +1,7 @@
 package com.ecommerce.ecommerce.infrastracture.controllers
 
 import com.ecommerce.ecommerce.domain.Product
+import com.ecommerce.ecommerce.exception.ProductServiceException
 import com.ecommerce.ecommerce.usecase.CreateProductData
 import com.ecommerce.ecommerce.usecase.DeleteOneProductData
 import com.ecommerce.ecommerce.usecase.GetAllProductData
