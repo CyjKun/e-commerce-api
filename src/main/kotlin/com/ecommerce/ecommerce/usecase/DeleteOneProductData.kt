@@ -8,12 +8,11 @@ import javax.transaction.Transactional
 
 @Service
 @Transactional
-class DeleteOneProductData(val productRepository: ProductRepository,
-                           val productJpaRepository: ProductJpaRepository) {
+class DeleteOneProductData(val productJpaRepository: ProductJpaRepository) {
     fun deleteOne(id: Long) {
         if(!productJpaRepository.existsById(id))
             throw ProductServiceException("No Products with id: " + id)
 
-        return productRepository.deleteById(id)
+        return productJpaRepository.deleteById(id)
     }
 }

@@ -1,4 +1,4 @@
-package com.ecommerce.ecommerce.response
+package com.ecommerce.ecommerce.domain.response
 
 import java.util.Date
 
