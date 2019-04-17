@@ -41,7 +41,7 @@ body:
 	"client_secret": "7-ismMZEOUvTr08ZZsFSijNYGKyQJiCNl3dCZ9DlrBHaUCnMhtrxV-tgc1p7uHL2"
 }
 ```
-note: should be able to return this JSON. where access_token can be used to use in the Authorization bearer token in  `Products` API
+note: should be able to return this JSON. where access_token can be used to use in the Authorization bearer token in the API
 ```
 {
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5ERTJOamhFTjBJMU9VSXlRVFJGT0VJNFFqY3hPVEk1T0VGRVJFSTFOVVUwUWpNNVJUVXpOUSJ9.eyJpc3MiOiJodHRwczovL2Rldi1jai5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWNhNDFjZDYyZTdlN2QxMGUyNTUwZTQ3IiwiYXVkIjoiZS1jb21tZXJjZS1hcGkiLCJpYXQiOjE1NTQ4NjA1NTQsImV4cCI6MTU1NDk0Njk1NCwiYXpwIjoiTHdna3BwaEE4OFBmSWgydmNZdmtISzZ3NHJRUjFVUjMiLCJndHkiOiJwYXNzd29yZCJ9.FnzQCJKTY-15ZweQjRIY572r9wZNikKLD4_kQHi2wBh6a327jt56tk_buHtrlcdKteoexX0-p2pC8v-NZ_0g3QahDvCCA7fqtc025tBTAkcbKLuTjkKnuqNeRIHpMkD5J8UJLXO6uiSP2UNL_MbFgznqp0rqYRgiRn3aHbVIxTIODlr2JhpCBuupfjjq5ihGXAhi20jgqWiaKS5d4pZSj_ACVbdNiikmYXKmhDaI-VijdcvPezfRwskpxZZGCfYTOFIeY2fe3jhp0_5j4kRohuuEl4kSMrvkWuKWBjytorzdeu1jKNNM5PsyhD8S64xccFSQv3f14BgTpngqW_5Z9w",
