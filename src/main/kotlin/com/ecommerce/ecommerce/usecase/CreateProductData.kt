@@ -8,7 +8,7 @@ import javax.transaction.Transactional
 
 @Service
 @Transactional
-class CreateProductData(val productJpaRepository: ProductJpaRepository) {
+open class CreateProductData(val productJpaRepository: ProductJpaRepository) {
     fun create(product: Product): Product {
         return productJpaRepository.save(product)
     }
