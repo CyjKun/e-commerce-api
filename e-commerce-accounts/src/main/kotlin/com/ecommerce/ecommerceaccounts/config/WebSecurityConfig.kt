@@ -1,4 +1,4 @@
-package com.ecommerce.ecommerce.config
+package com.ecommerce.ecommerceaccounts.config
 
 import com.auth0.spring.security.api.JwtWebSecurityConfigurer
 import org.springframework.beans.factory.annotation.Value

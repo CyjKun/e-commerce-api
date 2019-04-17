@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/products")
-class ProductController(val createProductData: CreateProductData,
-                        val getAllProductData: GetAllProductData,
-                        val getOneProductData: GetOneProductData,
-                        val deleteOneProductData: DeleteOneProductData,
-                        val updateOneProductData: UpdateProductData
+class ProductController(
+        val createProductData: CreateProductData,
+        val getAllProductData: GetAllProductData,
+        val getOneProductData: GetOneProductData,
+        val deleteOneProductData: DeleteOneProductData,
+        val updateOneProductData: UpdateProductData
 ) {
     //CREATE
     @PostMapping
