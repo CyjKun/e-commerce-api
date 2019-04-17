@@ -7,8 +7,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.context.request.WebRequest
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler
-
-import java.util.Date
+import java.util.*
 
 @ControllerAdvice
 class ExceptionHandler : ResponseEntityExceptionHandler() {
@@ -16,7 +15,7 @@ class ExceptionHandler : ResponseEntityExceptionHandler() {
     fun handleAnyException(ex: Exception, request: WebRequest): ResponseEntity<Any> {
         var errorMessageDescription = ex.localizedMessage
 
-        if(errorMessageDescription == null)
+        if (errorMessageDescription == null)
             errorMessageDescription = ex.toString()
 
         val errorMessage = ErrorMessage(Date(), ex.localizedMessage)
@@ -32,7 +31,7 @@ class ExceptionHandler : ResponseEntityExceptionHandler() {
     fun handleProductServiceException(ex: ProductServiceException, request: WebRequest): ResponseEntity<Any> {
         var errorMessageDescription = ex.localizedMessage
 
-        if(errorMessageDescription == null)
+        if (errorMessageDescription == null)
             errorMessageDescription = ex.toString()
 
         val errorMessage = ErrorMessage(Date(), ex.localizedMessage)

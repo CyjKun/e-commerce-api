@@ -1,19 +1,17 @@
 package com.ecommerce.ecommerce.infrastracture.controllers
 
 import com.ecommerce.ecommerce.domain.Product
-import com.ecommerce.ecommerce.exception.ProductServiceException
-import com.ecommerce.ecommerce.usecase.CreateProductData
-import com.ecommerce.ecommerce.usecase.DeleteOneProductData
-import com.ecommerce.ecommerce.usecase.GetAllProductData
-import com.ecommerce.ecommerce.usecase.GetOneProductData
+import com.ecommerce.ecommerce.usecase.*
 import org.springframework.web.bind.annotation.*
+
 
 @RestController
 @RequestMapping("/api/products")
 class ProductController(val createProductData: CreateProductData,
                         val getAllProductData: GetAllProductData,
                         val getOneProductData: GetOneProductData,
-                        val deleteOneProductData: DeleteOneProductData
+                        val deleteOneProductData: DeleteOneProductData,
+                        val updateOneProductData: UpdateProductData
 ) {
     //CREATE
     @PostMapping
@@ -25,6 +23,11 @@ class ProductController(val createProductData: CreateProductData,
     @GetMapping
     fun getAllProduct(): List<Product> {
         return getAllProductData.getAll()
+    }
+
+    @PutMapping("/{id}")
+    fun updateProducts(@RequestBody newProduct: Product, @PathVariable id: Long): Product {
+        return updateOneProductData.updateOne(newProduct, id)
     }
 
     @GetMapping("/{id}")
