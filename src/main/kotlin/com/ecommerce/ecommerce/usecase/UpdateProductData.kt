@@ -7,7 +7,7 @@ import javax.transaction.Transactional
 
 @Service
 @Transactional
-class UpdateProductData(val productJpaRepository: ProductJpaRepository) {
+open class UpdateProductData(val productJpaRepository: ProductJpaRepository) {
     fun updateOne(newProduct: Product, id: Long): Product {
         return productJpaRepository.findById(id)
                 .map { product ->
