@@ -8,7 +8,7 @@ import javax.transaction.Transactional
 
 @Service
 @Transactional
-class GetAllProductData(val productJpaRepository: ProductJpaRepository) {
+open class GetAllProductData(val productJpaRepository: ProductJpaRepository) {
     fun getAll(): List<Product> {
         if (productJpaRepository.findAll().isEmpty())
             throw ProductServiceException("No Products to display")

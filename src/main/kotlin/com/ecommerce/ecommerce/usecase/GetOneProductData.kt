@@ -8,7 +8,7 @@ import javax.transaction.Transactional
 
 @Service
 @Transactional
-class GetOneProductData(val productJpaRepository: ProductJpaRepository) {
+open class GetOneProductData(val productJpaRepository: ProductJpaRepository) {
     fun getOne(id: Long): Product {
         if (!productJpaRepository.existsById(id))
             throw ProductServiceException("No Products with id: " + id)
