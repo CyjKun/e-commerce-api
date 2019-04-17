@@ -17,26 +17,18 @@ body:
 }
 ```
 
----
-
 ## Get All Products
 @GetMapping = `localhost:8100/api/products`
-
----
 
 ## Get One Product
 @GetMapping = `localhost:8100/api/products/{id}`
 
 id = id of the product
 
----
-
 ## Delete One Product
 @DeleteMapping = `localhost:8100/api/products/{id}`
 
 id = id of the product
-
----
 
 `application.properties`
 ```
