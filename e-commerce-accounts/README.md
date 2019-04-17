@@ -46,7 +46,7 @@ body:
 }
 ```
 
-## Delete One Product
+## Delete One Account
 @DeleteMapping = `localhost:8000/api/accounts/{id}`
 
 id = id of the account
