@@ -1,7 +1,5 @@
 # E-Commerce-Accounts
 
----
-
 ## Save Account
 @PostMapping = `localhost:8000/api/accounts`
 
