@@ -19,8 +19,6 @@ body:
 }
 ```
 
----
-
 ## Login
 @PostMapping = `https://dev-cj.auth0.com/oauth/token`
 
