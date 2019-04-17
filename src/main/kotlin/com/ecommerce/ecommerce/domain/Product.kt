@@ -8,10 +8,8 @@ import javax.validation.constraints.NotBlank
 
 @Entity(name = "products")
 class Product(
-        @Id @GeneratedValue(strategy = GenerationType.AUTO)
+        @Id
         var id: Long = 0,
-        @get:NotBlank
         var name: String = "",
-        @get:NotBlank
         var description: String = ""
 )
