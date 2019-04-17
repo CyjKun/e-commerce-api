@@ -17,19 +17,14 @@ body:
 }
 ```
 
----
-
 ## Get All Accounts
 @GetMapping = `localhost:8000/api/accounts`
 
----
 
 ## Get One Account
 @GetMapping = `localhost:8000/api/accounts/{id}`
 
 id = id of the account
-
----
 
 ## Update Account
 @PutMapping = `localhost:8000/api/accounts/{id}`
@@ -48,8 +43,6 @@ body:
 @DeleteMapping = `localhost:8000/api/accounts/{id}`
 
 id = id of the account
-
----
 
 `application.properties`
 ```
