@@ -72,19 +72,19 @@ body:
 ---
 
 ## Get All Products
-@GetMapping = `localhost:8080/api/products`
+@GetMapping = `localhost:8100/api/products`
 
 ---
 
 ## Get One Product
-@GetMapping = `localhost:8080/api/products/{id}`
+@GetMapping = `localhost:8100/api/products/{id}`
 
 id = id of the product
 
 ---
 
 ## Delete One Product
-@DeleteMapping = `localhost:8080/api/products/{id}`
+@DeleteMapping = `localhost:8100/api/products/{id}`
 
 id = id of the product
 
@@ -108,4 +108,7 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDial
 
 # Hibernate ddl auto (create, create-drop, validate, update)
 spring.jpa.hibernate.ddl-auto = update
+
+spring.application.name=e-commerce-products
+server.port=8100
 ```
