@@ -1,7 +1,7 @@
 # E-Commerce-Products
 
 ## Save Product
-@PostMapping = `localhost:8080/api/products`
+@PostMapping = `localhost:8100/api/products`
 
 headers:
 
